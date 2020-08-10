@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(100deg, skyblue, #f8777f);
+    font-family: cursive;
+    color: white;
+    min-height: 100vh;
+}
+.container{
+    /* transform: rotateY(70deg); */
+}
+header, .todo-container{
+    min-height: 20vh;
+    display:flex;
+    align-content:center;
+    justify-content: center;
+}
+header{
+    margin: 12px;
+    font-size: 2.5rem;
+}
+.todo-container{
+    margin: 1rem;
+    min-width: 40px;
+}
+.todo-container input[type=text]{
+    outline: none;
+    border:none;
+    background-color: #ffdddd;
+    padding: 26px;
+    font-size: 23px;
+    transition:  all 0.8s ease;
+    border-radius: 5px;
+
+
+}
+.todo-container input[type=text]:focus{
+    background: #ffdddd;
+    padding: 0.7rem;
+}
+.todo-container #todo-btn{
+    padding: 1.5rem;
+    font-size: 26px;
+    cursor: pointer;
+    transition: all 0.8s ease;
+    background: #f8777f;
+    border:none;
+    color: seashell;
+    border-radius: 13px;
+
+
+}
+
+.todo-container #todo-btn:focus{
+    outline-color:seashell;
+    padding: 0.7rem;
+}
+
+.todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.todoItems{
+    display: flex;
+    gap: 1rem;
+    background: whitesmoke;
+    color: black;
+    position: relative;
+    align-items: center;    
+    padding: 0.5rem;
+    margin: 1rem;
+    /* transition: cubic-bezier(0.95, 0.05, 0.795, 0.035); */
+
+}
+
+.addBtn, .trashBtn{
+    margin: 0.3rem;
+    padding: 12px 12px;
+    color:white;
+    background: #c99090;
+    background-image: linear-gradient(120deg, #c99090, #f8777f);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    top:25px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.addBtn:focus, .trashBtn:focus{
+    padding: 7px;
+}
+
+.todoLi{
+    list-style: none;
+    margin: 1rem;
+    font: stroke;
+    width: 20vw;
+
+}
+
+
+/*  */
