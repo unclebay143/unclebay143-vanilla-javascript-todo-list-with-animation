@@ -2,13 +2,12 @@
  const todo = document.querySelector('#todo-text');
  const todoAddBtn = document.querySelector('#todo-btn');
  const todoList = document.querySelector('.todo-List');
- const strokeBtn = document.querySelector('.addBtn');
+//  const strokeBtn = document.querySelector('.addBtn');
 
 // EVENT LISTENERs
 console.log("heeeeeeeeeeeeee");
 todoAddBtn.addEventListener('click',show);
-strokeBtn.addEventListener('click',completed);
-console.log(strokeBtn);
+todoList.addEventListener('click',completed);
 
 // FUNCTION
 
@@ -56,10 +55,8 @@ function show(hold){
 }
 
 function completed(d){
-    // d.preventDefault();
-    console.log("coming");
-    // document.querySelector('todoLi').style.color=("red");
-    alert("hey")
+    document.querySelector('.todoLi').style.textDecoration=("line-through");
+    document.querySelector('.todo-List').style.color=("black");
 }
 
 
